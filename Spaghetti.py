@@ -14,7 +14,7 @@ st.title("Interaktivni Spaghetti Plot")
 
 # --- Učitavanje podataka ---
 # NAPOMENA: CSV fajl 'sredjena_baza_elas.csv' mora biti u istom folderu kao i ovaj .py skript
-FILE_PATH = "C:/Users/Administrator/Desktop/Gigs/Jelena Simic/sredjena_baza_elas.csv"
+FILE_PATH = "sredjena_baza_elas.csv"
 
 @st.cache_data  # Keširanje podataka za bolje performanse
 def load_data(path):
@@ -163,4 +163,5 @@ else:
     
     # Opciono: Prikaz filtriranih podataka u tabeli
     with st.expander("Pogledajte filtrirane podatke"):
+
         st.dataframe(filtered_df)
